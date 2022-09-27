@@ -1,0 +1,897 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    font-size: 1em;
+    color: #797979;
+}
+.desplazar_menu{
+    animation: mostrarArriba 0.6s;
+}
+@keyframes mostrarArriba{
+    0%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+header{
+    background-color:rgba(0, 0, 0, 0.452);
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+header #listado a{
+    color: rgb(255, 255, 255);
+}
+header #listado p{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.menu_fijo{
+    background-color: white;
+    position: fixed;
+    border-bottom: 1px solid #cfcfcf;
+}
+.menu_fijo #listado p{
+    color: #6d6d6d;
+}
+
+#titulo{
+    margin: 15px 20%;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #ff6863de;
+    cursor: pointer;
+   
+}
+#listado{
+    display: flex;
+    list-style: none;
+    position: absolute;
+    top: 10px;
+    right: 20%;  
+}
+#btn-menu{
+    display: none;
+}
+#listado li{
+    margin: 10px 5px;
+}
+#listado a{
+    text-decoration: none;
+    
+}
+#listado a p{
+    padding: 10px;
+}
+#listado a p:hover{
+    transform: scale(1.1);
+    background-color: #ff6863;
+    color: white;
+    transition: all 0.4s;
+}
+.principal{
+    background: url(img/fondos.webp) center center no-repeat ;
+    background-size: cover;
+    height: 90vh;
+}
+.contenido{
+    background-color: rgba(0, 0, 0, 0.247);
+    height: 90vh;
+  
+}
+.sub_titulo{
+    position: relative;
+    display: inline-block;
+    top: 35%;
+    color: white;
+    font-size: 2.5em;
+    left: 5%;
+    background-color: #ff6863de;
+    padding: 10px;
+ 
+}
+.conocer{
+    position: relative;
+    display: inline-block;
+    top: 45%;
+    color: white;
+    font-size: 1.5em;
+    left: 5%;
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+}
+.contenedor_about{
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+.about{
+    width: 50%;
+    margin: 90px 0 0 0 ;
+}
+.about h2{
+    margin: 15px 0px;
+    color: black;
+    font-size: 2em;
+}
+.line{
+    width: 15%;
+    border: #ff6863de 1px solid;
+}
+.linea_completa{
+    border: #000000 1px solid;
+}
+.contenedor_info{
+    width: 50%;
+    margin: 60px 0 20px 0;
+    padding: 25px;    
+}
+
+.titulo_info{
+ margin: 5px ;
+ cursor: pointer;
+}
+.texto_info{
+    list-style: none;
+    transition: all 0.4s;
+    height: 0;
+    max-height: max-content;
+    overflow: hidden;
+    border: 1px solid #cfcfcf;
+    border-bottom: 0.5px solid #cfcfcf;
+    padding: 0 10px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #ff6863de;
+    border-radius: 50px;
+}
+.abrir{
+    border: 1px solid #cfcfcf;
+    border-bottom: none;
+    display: flex;
+    
+}
+.abrir h3{
+    position: relative;
+    left: 10px;
+    padding: 5px;
+    font-size:1.2em;
+}
+.abrir img{
+    padding: 12px 12px;
+    background-color: #cfcfcf;
+    cursor: pointer;
+    width: 45px;
+}
+.arrow img{
+    transform: rotate(90deg);
+    
+}
+.texto_datos{
+    padding: 10px;
+}
+.cont_desp{
+    margin: 10px 0;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+   margin: auto;
+    width: 60%;
+    padding-top: 100px;
+}
+.proyectos{
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    width: 25%;
+    height: 500px;
+    box-shadow: 0 0 10px #ff6863;
+    overflow: scroll;
+}
+.proyectos h3{
+    margin: 15px;
+}
+.proyectos img{
+ border-radius: 50%;
+ background-color: #ff6863;
+ padding: 15px;
+ margin-top: 10px;
+ 
+}
+.cont_video{
+    background: url(img/fonts.webp) center center fixed no-repeat;
+    background-attachment: fixed; 
+}
+.webs_destacadas{
+    background-color: #00000036;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 50px  auto;
+    color: #ffffff;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+    padding: 20px;
+}
+.webs_destacadas h2{
+    margin: 22px;
+}
+.webs_destacadas hr{
+    width: 20%;
+    margin: 20px auto;
+    border: #ff6863de 1px solid;
+}
+.slider{
+    width: 60%;
+    margin: auto;
+}
+.carousel-item> img{
+    height: 600px;
+    width: 100%;
+}
+
+.trabajar_juntos{
+    background: url(/img/fondos.webp) center center no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.trabajar_juntos div{
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.trabajar_juntos h2{
+    width: 40%;
+    padding: 80px 0 20px 0 ;
+    margin: auto;
+    font-size: 2em;
+}
+.trabajar_juntos p{
+    width: 40%;
+    margin: 30px auto;
+}
+.trabajar_juntos a h3{
+    background-color: #ff6863;
+    padding: 15px;
+    margin-bottom: 40px;
+    font-size: 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.trabajar_juntos h3:hover{
+    background-color: #ffffff;
+    color: #ff6863;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+.container_g{
+    background-color: #f0f0f0;
+}
+.servicios{
+    width: 60%;
+    text-align: center;
+    padding: 100px 0;
+    margin: auto;     
+}
+.servicios hr{
+    width: 20%;
+    margin: auto;
+    border: #ff6863de 1px solid;
+    margin-bottom: 20px;
+}
+.galeria{
+    width: 100%;
+}
+.galeria img{
+    width: 25%;
+    margin: 20px;
+    height: 300px;
+}
+.items_servicios{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    padding: 50px;
+}
+.servicios h2{
+    padding-bottom: 20px;
+}
+.habilidades{
+    display: flex;
+    width: 60%;
+    margin: 40PX auto;
+}
+.habilidades >div{
+    width: 50%;
+    padding: 50px;
+}
+.habilidades h2{
+    margin: 10px;
+}
+.barra_diseño{
+    height: 10px;
+    background-color: #cfcfcf;
+    margin: 15px 0;
+}
+.barra_diseño p{
+    width: 80%;
+    height: 10px;
+    background-color: #ff6863;
+    border-radius: 0 5px 5px 0px;   
+}
+.tipografia p{
+    width: 70%;
+}
+.programacion p{
+    width: 85%;
+}
+.precios{
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+.precios hr{
+    width: 20%;
+    margin: 0 auto 15px auto;
+    border:2px solid #ff6863;
+}
+.precios > h2{
+    margin: 50px 0 0px;
+}
+.colores{
+    box-shadow: 0 0 5px #ff6863;
+    overflow: scroll;
+    padding: 50px 10px ;
+    
+}
+.color{
+    box-shadow: 0 0 10px #6d6d6d;
+    overflow: scroll;
+    padding: 10px 10px ;
+    height:600px;
+}
+.color h3{
+    height: 15%;
+}
+.elemento{
+    background-color: #ff6863;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 15px 0;
+    display: inline-block;
+    box-shadow: 0 0 5px #000000;
+    border: 1px solid white;
+}
+.elemento h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    margin-top:20px;
+}
+.precios ul{
+    margin: 20px 0;
+    text-align: left;
+}
+.precios li{
+    padding: 5px 0;
+    margin-left: 10%;
+}
+.precios li >img{
+    position: relative;
+    top: 8px;
+    width: 25px;
+    margin: 5px 10px 0 10px ; 
+}
+.suscribir{
+    background: url(img/fondo.webp) center no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+}
+.suscribir div{
+    background-color: rgba(0, 0, 0, 0.466);
+    height: 40vh;
+    color: white;
+}
+.suscribir h2{
+    padding: 40px;
+    font-size: 2em;
+}
+.suscribir P{
+    width: 60%;
+    margin: auto;
+}
+.suscribir input{
+    background-color: #00000000;
+    border: 1px solid white;
+    width: 40%;
+    margin-top: 40px;
+    padding: 15px; color: white;
+    font-size: 1.2em;
+}
+.suscribir input::placeholder{
+    color: rgba(255, 255, 255, 0.829);
+    font-style: italic;
+    font-size: 1.2em;
+}
+.suscribir button{
+    background-color: #ff6863;
+    color: white;
+    border: none;
+    margin-left:10px;
+    position: relative;
+    top: -1px;
+    padding: 15px 40px;
+    border:2px solid #ff6863 ;
+}
+.suscribir button:hover{
+    background-color: white;
+    color: #ff6863;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.final{
+    color: white;
+    background-color: #6d6d6d;
+    margin: auto;
+}
+.contenedor_final{
+    width: 80%;
+    display: flex;
+    padding:100px 0;
+    margin: auto;
+    
+}
+.contenedor_final div{
+    margin: auto;
+    padding: 20px;
+    
+}
+.contenedor_final> .webs_destacadas h2 ,.contenedor_final > .webs_destacadas p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.formulario{
+    width: 100%;
+    text-align: center; 
+}
+.contenedor_final  input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 5px 10px 0;
+}
+.formulario textarea{
+    resize: none;
+    width: 100%;
+    padding: 10px;
+    margin:15px 0;
+    
+}
+.formulario button{
+    padding: 15px 30px;
+    background-color: #ff6863;
+    color: white;
+    border: 2px solid #ff6863;
+}
+.formulario button:hover{
+    background-color: white;
+    color: #ff6863;
+    transform: scale(1.1);
+    transition: all 0.4s;
+    cursor: pointer;
+}
+.final_pg{
+    background-color: #050718;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.final_pg img{
+    width:14px;
+}
+.mapa{
+    height: max-content;
+    padding: 0;
+    margin: 50px 0 0 0;
+    background: #f0f0f0;
+    color: #6d6d6d;
+}
+.carousel-caption{
+    background-color: #00000062;
+}
+.proyectos:hover{
+    transform: translateY(-15px);
+    transition: 0.4s;
+}
+.aviso_cookies{
+    display: none;
+    background-color: white;
+    padding: 20px;
+    width: calc(100% -40px);
+    max-width: 300px;
+    line-height: 150%;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 40%;
+    z-index: 99;
+    left: calc(50% - 150px);
+    padding-top: 60px;
+    box-shadow: 0 2px 10px 5px #ff6863;
+    text-align: center;
+}
+
+.aviso_cookies.activo{
+    display: block;
+}
+.aviso_cookies .galleta{
+    max-width: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+.aviso_cookies .titulo, .parrafo{
+    margin-bottom: 15px;
+
+}
+.aviso_cookies .boton{
+    width: 100%;
+    background-color: #ff6863;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease all;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ff6863;
+}
+.aviso_cookies .boton:hover{
+    background-color: white;
+    color: #ff6863;
+}
+.fondo_aviso_cookies{
+    display: none;
+    background-color: #0000006c;
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}   
+.fondo_aviso_cookies.activo{
+    display: block;
+}
+.desplazar_cookies{
+    animation: solocookies 0.6s;
+}
+@keyframes solocookies{
+    0%{
+        transform: translateY(100vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* primer media */
+@media (max-width:1830px){
+
+    .contenedor_about{
+        width: 94%;
+    }
+    .items{
+        width: 90%;
+        text-align: center;
+    }
+   
+    .slider{
+        width: 80%;
+    }
+    
+    .container_g{
+        background-color: #f0f0f0;
+    }
+    .servicios{
+        width: 90%;   
+    }
+    
+    .precios{
+        width: 90%;
+    }
+    .color h3{
+        height: 12%;
+    }
+    #listado{
+       
+        right: 10%;  
+    }
+    .webs_destacadas{
+        height: auto;
+       
+    }
+    .proyectos{
+        width: 30%;
+    }
+    #titulo{
+        margin: 15px 5%;
+            
+    }
+}
+
+/* segundo media */
+@media (max-width:1220px){
+
+    body{
+        font-family: 'Lora', serif;
+        letter-spacing: 0px;
+    }
+    #listado{
+        right: 5%;  
+    }
+    .contenedor_about{
+        width: 100%;
+        padding: 50px;
+    }
+    .items{
+        width: 100%;
+    }
+   
+    .slider{
+        width: 100%;
+    }
+    
+    .container_g{
+        background-color: #f0f0f0;
+    }
+    .servicios{
+        width: 100%;   
+    }
+    
+    .precios{
+        width: 100%;
+    }
+   
+}
+/* tercer media */
+@media (max-width:965px){
+    .proyectos{
+        width: 80%;
+        padding: 5px;
+        display: inline-block;
+        margin: 10px auto;
+        height: max-content;
+    }
+    
+    .contenedor_about{
+        width: 100%;
+        display: inline-block;
+    }  
+    .about{
+        margin: auto;
+        width: 90%;
+    }
+    .contenedor_info{
+        margin: auto;
+        width: 100%;
+    }
+    .sub_titulo{
+        color: white;
+        font-size: 2em;
+        
+     
+    }
+    .conocer{
+        font-size: 1.2em;
+    }
+}
+/* cuarto media */
+@media (max-width:720px){
+
+    #listado{
+        top: 0;
+        left: 100%;
+        padding: 40px;
+        display: inline;
+        list-style: none;
+        position: fixed; 
+        width: 100%;
+        height: 120vh;
+        background-color: rgba(22, 22, 22, 0.795);
+         color: white;
+        transition: all 1s ease;
+        text-align: center;  
+        padding: 100px;      
+    }
+    #listado.activado {
+        padding:30% 0;
+    }
+    .activado{
+        transform: translateX(-100%);
+        transition: all 0.6s ease;
+    }
+    #btn-menu{
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        z-index: 1;
+        background-color: #ff6863;
+        display: inline;
+        padding: 10px 10px 12px 10px;
+        border-radius: 5px;
+    }
+    .menu_fijo #listado p{
+        color: #ffffff;
+    }
+  
+    .suscribir div{
+        height: max-content;
+    }
+    .suscribir a {
+        width: 100%;
+    }
+    .suscribir p {
+        width: 100%;
+    }
+    .suscribir input{
+        width: 90%;
+        margin: 10px;
+    }
+    .final{
+        color: white;
+        background-color: #6d6d6d;
+        margin: auto;
+    }
+    .contenedor_final{
+        width: 80%;
+        display: block;
+        padding:50px 0;
+        margin: auto;
+        
+    }
+    .contenedor_final div{
+        margin: auto;
+        padding: 20px;
+        
+    }
+    .contenedor_final> .webs_destacadas h2 ,.contenedor_final > .webs_destacadas p {
+        color: white;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .formulario{
+        width: 100%;
+        text-align: center; 
+    }
+    .contenedor_final  input{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 5px 10px 0;
+    }
+    .formulario textarea{
+        resize: none;
+        width: 100%;
+        padding: 5px;
+        margin:15px 0;
+        
+    }
+    .formulario button{
+        padding: 15px 30px;
+        background-color: #ff6863;
+        color: white;
+        border: 2px solid #ff6863;
+    }
+    .formulario button:hover{
+        background-color: white;
+        color: #ff6863;
+        transform: scale(1.1);
+        transition: all 0.4s;
+        cursor: pointer;
+    }
+
+}
+@media (max-width:580px){
+    .sub_titulo{
+        position: relative;
+        display: inline-block;
+        top: 35%;
+        color: white;
+        font-size: 1.5em;
+        left: 0%;
+        padding: 0px;
+        margin: 0 20px;
+     
+    }
+    .conocer{
+        font-size: 1em;
+    }
+
+    .about h2{
+        margin: 15px 0px;
+        font-size: 1.5em;
+    }
+    .abrir h3{
+    position: relative;
+    left: 0px;
+    padding: 5px;
+    font-size:1.2em;
+    }
+    .abrir img{
+        padding: 12px 12px;
+        background-color: #ffffff;
+        cursor: pointer;
+        width: 45px;
+        height: 65px;
+    }
+    .arrow img{
+        transform: rotate(90deg);
+    }
+    .texto_datos{
+        padding: 10px;
+    }
+    .contenedor_about{
+        padding: 2px;
+    }
+    .contenedor_info{
+        width: 100%;
+        padding: 0;
+    }
+
+.trabajar_juntos h2{
+    width: 100%;
+    font-size: 1.5em;
+}
+.trabajar_juntos p{
+    width: 100%;
+    margin: 30px auto;
+}
+.trabajar_juntos a h3{
+    font-size: 1em;
+}
+
+.carousel-item> img{
+    height: 30vh;
+    width: 100%;
+}
+
+.items_servicios{
+    padding: 0;
+    margin: 0;
+}
+.proyectos{
+    margin: 20px;
+    width: 100% ;
+}
+}
+
+/*  background-color:#ff6863;
+    background-color:#797979;*/
