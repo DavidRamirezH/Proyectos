@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(17, 17, 17);
+}
+.contenedor{
+    width: 500px;
+    height: 500px;
+    background: white;
+    margin: 25vh auto;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgb(174, 0, 255);
+    border-radius: 20px;
+   
+}
+.contenedor div{
+    animation: slider 20s linear infinite ;
+
+}
+.contenedor img{
+    width: 500px;
+    height: 100%;
+}
+@keyframes slider {
+    0%{
+        transform: translate(0px);
+    }
+    
+    25%{
+        transform: translate(-500px);
+    }
+    
+    50%{
+        transform: translate(-1000px);
+    }
+    75%{
+        transform: translate(-1500px);
+    }
+    100%{
+        transform: translate(-2000px);
+    }
+}
